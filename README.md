@@ -1,4 +1,4 @@
-<img align="center" src="https://github.com/lorenasg1/nlw-proffy/blob/master/.github/screenshot_landing.png" alt="Proffy landing page screenshot" width="80%" height="auto" />
+<p  align="center"><img src="https://github.com/lorenasg1/nlw-proffy/blob/master/.github/screenshot_landing.png" alt="Proffy landing page screenshot" width="80%" height="auto" /></p>
 
 <h1 align="center">Proffy</h1>
 <p align="center">A platform to connect students and teachers.<br />
