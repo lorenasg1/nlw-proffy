@@ -3,7 +3,8 @@
 <h1 align="center">Proffy</h1>
 <p align="center">A platform to connect students and teachers.<br />
 Project developed during the <a href="https://rocketseat.com.br">Rockeset</a> <strong>Next Level Week #02</strong>.<br>
-Try the <a href="https://proffy-lsg.vercel.app/">live demo</a>.
+Try the <a href="https://proffy-lsg.vercel.app/">live demo</a>.<br>
+<a href="https://insomnia.rest/run/?label=proffy-api&uri=https://github.com/lorenasg1/nlw-proffy/blob/master/.github/Insomnia_proffy.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
   </p>
 
 <p align="center"><a href="#technologies">Technologies</a> | <a href="#features">Features</a> | <a href="how-to">How to use</a></p>
