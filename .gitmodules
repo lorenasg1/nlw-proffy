@@ -1,0 +1,6 @@
+[submodule "nlw-proffy-mobile"]
+	path = nlw-proffy-mobile
+	url = https://github.com/lorenasg1/nlw-proffy-mobile
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/lorenasg1/nlw-proffy-mobile
