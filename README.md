@@ -1,14 +1,15 @@
-<img src="https://github.com/lorenasg1/nlw-proffy-web/blob/master/.github/screenshot_landing.png" alt="Proffy landing page screenshot" width="100%" />
+<p  align="center"><img src="https://github.com/lorenasg1/nlw-proffy/blob/master/.github/screenshot_landing.png" alt="Proffy landing page screenshot" width="100%" height="auto" /></p>
 
 <h1 align="center">Proffy</h1>
 <p align="center">A platform to connect students and teachers.<br />
 Project developed during the <a href="https://rocketseat.com.br">Rockeset</a> <strong>Next Level Week #02</strong>.<br>
-Try the <a href="https://proffy-lsg.vercel.app/">live demo</a>.
+Try the <a href="https://proffy-lsg.vercel.app/">live demo</a>.<br><br>
+<a href="https://insomnia.rest/run/?label=proffy-api&uri=https%3A%2F%2Fgithub.com%2Florenasg1%2Fnlw-proffy%2Fblob%2Fmaster%2F.github%2FInsomnia_proffy.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
   </p>
 
 <p align="center"><a href="#technologies">Technologies</a> | <a href="#features">Features</a> | <a href="how-to">How to use</a></p>
 
-<p align="center">🚧 Under development 🚧</p>
+<p align="center">🚧 Proffy 2.0 Under development 🚧</p>
 
 ## Technologies
 
