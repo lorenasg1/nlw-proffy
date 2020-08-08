@@ -9,7 +9,7 @@ Try the <a href="https://proffy-lsg.vercel.app/">live demo</a>.<br><br>
 
 <p align="center"><a href="#technologies">Technologies</a> | <a href="#features">Features</a> | <a href="how-to">How to use</a></p>
 
-<p align="center">🚧 Under development 🚧</p>
+<p align="center">🚧 Proffy 2.0 Under development 🚧</p>
 
 ## Technologies
 
