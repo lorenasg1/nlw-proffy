@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, KeyboardAvoidingView, Platform } from 'react-native';
 import {
   ScrollView,
   TextInput,
   BorderlessButton,
   RectButton,
+  State,
 } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-community/async-storage';
@@ -15,6 +16,7 @@ import TeacherItem, { Teacher } from '../../components/TeacherItem';
 
 import api from '../../services/api';
 import styles from './styles';
+import Picker from '../../components/ModalPicker';
 
 const TeacherList = () => {
   const [teachers, setTeachers] = useState([]);
@@ -61,6 +63,8 @@ const TeacherList = () => {
     setTeachers(response.data);
   };
 
+  const [state, setState] = useState({ subject: 'Selecione uma opção' });
+
   return (
     <View style={styles.container}>
       <PageHeader
@@ -80,6 +84,23 @@ const TeacherList = () => {
               onChangeText={text => setSubject(text)}
               placeholder="Qual matéria?"
             />
+
+            {/* <Picker
+                style={styles.picker}
+                onValueChange={value => setState({ value })}>
+                <Picker.Item label="Selecione uma opção" value="default" />
+                <Picker.Item label="Artes" value="Artes" />
+                <Picker.Item label="Biologia" value="Biologia" />
+                <Picker.Item label="Física" value="Física" />
+                <Picker.Item label="Química" value="Química" />
+                <Picker.Item label="Educação Física" value="Educação Física" />
+                <Picker.Item label="História" value="História" />
+                <Picker.Item label="Geografia" value="Geografia" />
+                <Picker.Item label="Matemática" value="Matemática" />
+                <Picker.Item label="Português" value="Português" />
+                <Picker.Item label="Inglês" value="Inglês" />
+                <Picker.Item label="Música" value="Música" />
+              </Picker> */}
 
             <View style={styles.inputGroup}>
               <View style={styles.inputBlock}>

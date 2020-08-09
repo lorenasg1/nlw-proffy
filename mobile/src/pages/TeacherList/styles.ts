@@ -53,6 +53,18 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginLeft: 16,
   },
+
+  picker: {
+    height: 54,
+    backgroundColor: '#fff',
+    // borderRadius: 8,
+    // justifyContent: 'center',
+    // paddingHorizontal: 16,
+    marginTop: 4,
+    marginBottom: 16,
+    color: '#000',
+    overlayColor: '#000',
+  },
 });
 
 export default styles;
