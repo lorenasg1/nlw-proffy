@@ -4,11 +4,6 @@
 
   display: flex;
   flex: 1;
-}
-
-#page-login-content {
-  display: flex;
-  flex: 1;
   flex-direction: column;
   width: 100%;
 }
@@ -193,16 +188,13 @@ input[type='checkbox']:checked:after {
 
 @media (min-width: 700px) {
   #page-login {
-    overflow: hidden;
-  }
-
-  #page-login-content {
-    max-width: 100%;
+    min-height: 100vh;
     display: flex;
     flex: 1;
-    flex-direction: row;
+    flex-flow: row nowrap;
+    overflow: hidden;
+
     justify-content: center;
-    align-items: center;
   }
 
   .logo-container {
@@ -237,7 +229,7 @@ input[type='checkbox']:checked:after {
 
   .form-container form,
   .form-container footer {
-    max-width: 35rem;
+    max-width: 40rem;
   }
 
   .form-container .form-options {
