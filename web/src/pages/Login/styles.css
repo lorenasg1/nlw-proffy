@@ -18,18 +18,23 @@
   justify-content: center;
   background-image: url('../../assets/images/background.svg');
   background-size: cover;
-  text-align: left;
   background-repeat: no-repeat;
 }
 
+.logo-container img {
+  max-height: 10rem;
+}
+
 .logo-container h2 {
+  text-align: left;
   font-weight: 600;
   font-size: 2.4rem;
   color: var(--color-text-in-primary);
+  margin-top: 1em;
 }
 
 .form-container {
-  margin: 0 3.2rem;
+  margin: 1em 6rem;
   flex: 2;
   background-color: var(--color-background);
   font-size: 2rem;
@@ -37,64 +42,85 @@
 
 .form-container fieldset {
   border: none;
-  margin-top: -1em;
 }
 
 .form-container fieldset legend {
   color: #32264d;
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: bold;
+  margin-bottom: 3.5rem;
 }
 
 .login-input-block {
   position: relative;
+  padding-top: 1em;
+  background: var(--color-input-background);
+  width: 40rem;
 }
 
-.input-block label {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+.border {
+  border: 1px solid var(--color-line-in-white);
+}
+
+.border-bottom {
+  border-top: 1px solid var(--color-line-in-white);
+  border-right: 1px solid var(--color-line-in-white);
+  border-left: 1px solid var(--color-line-in-white);
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
 }
 
 .login-input-block input {
   width: 100%;
   height: 5.6rem;
   outline: 0;
-  border: 1px solid var(--color-line-in-white);
+  line-height: 1.2rem;
+  border: transparent;
   padding: 0rem 1.6rem;
-  font: 1.6rem Archivo;
+  font: 1.8rem Archivo;
   background: var(--color-input-background);
 }
 
 .login-input-block:focus-within::after {
-  width: 0.15em;
-  height: 1.8em;
+  width: 0.2rem;
+  height: 5rem;
   content: '';
   background: var(--color-primary-light);
   position: absolute;
   left: 0rem;
-  bottom: 1rem;
+  bottom: 1.4rem;
   border-radius: 0.8rem;
 }
 
-.login-input-block input[type='email'] {
+form div:first-child {
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
 }
 
 .login-input-block input[type='password'] {
+  border-bottom: 1px solid var(--color-line-in-white);
   border-bottom-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
 }
 
+.login-input-block label {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  position: absolute;
+  left: 1.6rem;
+  bottom: 3em;
+}
 .form-container .form-options {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
   line-height: 2.4rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   justify-self: center;
-  margin-top: 1.5rem;
+  margin-top: 3.2rem;
+  margin-bottom: 4.5rem;
 }
 
 input[type='checkbox'] {
@@ -151,7 +177,6 @@ input[type='checkbox']:checked:after {
 .form-container button {
   width: 100%;
   height: 5.6rem;
-  margin-top: 2em;
   background: #dcdce6;
   border: 0;
   border-radius: 0.8rem;
@@ -168,22 +193,26 @@ input[type='checkbox']:checked:after {
 
 .form-container form,
 .form-container footer {
-  /* max-width: 32.5rem;s */
+  min-width: 30rem;
 }
 
 .form-container footer {
-  margin-top: 7rem;
+  margin-top: 13.6rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   overflow: hidden;
-
-  /* margin-bottom: 10em; */
+  font-size: 1.8rem;
 }
 
 .form-container footer a {
   color: var(--color-primary);
-  font-weight: bold;
+}
+
+.form-container footer span,
+img {
+  color: var(--color-text-complement);
+  font-size: 1.6rem;
 }
 
 @media (min-width: 700px) {
@@ -198,20 +227,15 @@ input[type='checkbox']:checked:after {
   }
 
   .logo-container {
-    height: 100%;
     max-width: 50%;
-    background-color: var(--color-background);
+    background-color: var(--color-primary);
     background-size: cover;
-    text-align: left;
     padding: 4em;
-  }
-
-  .logo-container img {
-    max-width: 40rem;
-    padding-bottom: 0;
+    line-height: 1em;
   }
 
   .logo-container h2 {
+    text-align: left;
     padding-top: 0;
     font-weight: 600;
     font-size: 2.4rem;
@@ -220,7 +244,6 @@ input[type='checkbox']:checked:after {
 
   .form-container {
     flex: 1;
-    /* padding: 2rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,7 +252,7 @@ input[type='checkbox']:checked:after {
 
   .form-container form,
   .form-container footer {
-    max-width: 40rem;
+    min-width: 30rem;
   }
 
   .form-container .form-options {
@@ -246,8 +269,4 @@ input[type='checkbox']:checked:after {
     align-items: baseline;
     justify-content: space-between;
   }
-
-  /* .form-container footer div {
-    padding: 1.5rem;
-  } */
 }

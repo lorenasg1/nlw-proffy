@@ -5,6 +5,7 @@ import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
 import './styles.css';
 import { Link } from 'react-router-dom';
+// import Input from '../../components/Input';
 
 const Login = () => {
   return (
@@ -21,14 +22,11 @@ const Login = () => {
             <legend>Fazer login</legend>
 
             <form>
-              {/* <Input name="email" label="E-mail" type="email" />
-              <Input name="password" label="Senha" type="password" /> */}
-
-              <div className="login-input-block">
+              <div className="login-input-block border">
                 <label htmlFor="email">E-mail</label>
                 <input type="email" name="email" id="email" />
               </div>
-              <div className="login-input-block">
+              <div className="login-input-block border-bottom">
                 <label htmlFor="password">Senha</label>
                 <input type="password" name="password" id="password" />
               </div>
