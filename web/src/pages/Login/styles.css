@@ -162,7 +162,7 @@ input[type='checkbox']:checked:after {
   color: white;
 }
 
-.form-container .form-options label {
+.form-options label {
   cursor: pointer;
 }
 
