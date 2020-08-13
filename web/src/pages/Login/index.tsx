@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
@@ -6,7 +7,6 @@ import showEyeIcon from '../../assets/images/icons/show-eye.svg';
 import hideEyeIcon from '../../assets/images/icons/hide-eye.svg';
 
 import './styles.css';
-import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
