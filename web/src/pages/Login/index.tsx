@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import logoImg from '../../assets/images/logo.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
+import showEyeIcon from '../../assets/images/icons/show-eye.svg';
+import hideEyeIcon from '../../assets/images/icons/hide-eye.svg';
 
 import './styles.css';
 import { Link } from 'react-router-dom';
-// import Input from '../../components/Input';
 
 const Login = () => {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+  const handlePasswordToggle = () => {
+    const passwordInput = document.querySelector('#password');
+
+    if (isPasswordVisible) {
+      passwordInput?.setAttribute('type', 'password');
+    } else {
+      passwordInput?.setAttribute('type', 'text');
+    }
+
+    setIsPasswordVisible(!isPasswordVisible);
+  };
+
   return (
     <div id="page-login">
       <div className="logo-container">
@@ -22,13 +37,23 @@ const Login = () => {
             <legend>Fazer login</legend>
 
             <form>
-              <div className="login-input-block border">
+              <div className="login-input-block border-top">
                 <label htmlFor="email">E-mail</label>
                 <input type="email" name="email" id="email" />
               </div>
               <div className="login-input-block border-bottom">
                 <label htmlFor="password">Senha</label>
-                <input type="password" name="password" id="password" />
+                <input name="password" id="password" />
+                <span
+                  aria-hidden="true"
+                  onClick={handlePasswordToggle}
+                  className="password-toggle">
+                  {isPasswordVisible ? (
+                    <img src={hideEyeIcon} alt="Mostrar/esconder senha" />
+                  ) : (
+                    <img src={showEyeIcon} alt="Mostrar/esconder senha" />
+                  )}
+                </span>
               </div>
 
               <div className="form-options">
