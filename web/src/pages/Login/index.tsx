@@ -6,9 +6,16 @@ import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 import showEyeIcon from '../../assets/images/icons/show-eye.svg';
 import hideEyeIcon from '../../assets/images/icons/hide-eye.svg';
 
+// import useAuth from '../../contexts/useAuth';
+
 import './styles.css';
 
 const Login = () => {
+  // const { signed, singIn, handleToggleRemember } = useAuth();
+
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
+
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const handlePasswordToggle = () => {
@@ -43,7 +50,7 @@ const Login = () => {
               </div>
               <div className="login-input-block border-bottom">
                 <label htmlFor="password">Senha</label>
-                <input name="password" id="password" />
+                <input type="password" name="password" id="password" />
                 <span
                   aria-hidden="true"
                   onClick={handlePasswordToggle}
@@ -58,7 +65,11 @@ const Login = () => {
 
               <div className="form-options">
                 <div className="rememberme">
-                  <input id="remember" type="checkbox" />
+                  <input
+                    // onChange={handleToggleRemember}
+                    id="remember"
+                    type="checkbox"
+                  />
                   <label htmlFor="remember">Lembrar-me</label>
                 </div>
                 <span>
